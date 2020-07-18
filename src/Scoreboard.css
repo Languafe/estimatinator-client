@@ -1,0 +1,19 @@
+table {
+  border-collapse: collapse;
+  box-shadow: 2px 1px 4px rgb(0, 0, 0, 0.3);
+}
+
+table th,
+table td {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+table th {
+  text-align: center;
+}
+
+table td:last-child {
+  text-align: center;
+}
+   
