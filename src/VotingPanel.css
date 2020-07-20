@@ -8,12 +8,18 @@
     flex-basis: 30%;
     padding: 1em;
     font-size: 1.5em;
+    margin: 0;
     margin-top: 1em;
     box-sizing: border-box;
     background-color: white;
     box-shadow: 2px 2px 4px grey, 0px 0px 1px black;
     outline-style: none;
     border: none;
+}
+
+.voting-panel button.selected {
+    background-color: grey;
+    font-weight: bold;
 }
 
 .voting-panel button:hover {

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Scoreboard.css';
 
-const Scoreboard = ({ votes }) => {
+const Scoreboard = ({ users }) => {
   return (
     <table className="scoreboard">
       <thead>
@@ -12,10 +12,10 @@ const Scoreboard = ({ votes }) => {
         </tr>
       </thead>
       <tbody>
-        {votes.map(v =>
-          <tr key={v.username}>
-            <td>{v.username}</td>
-            <td>{v.vote}</td>
+        {users.map(u =>
+          <tr key={u.username}>
+            <td>{u.username}</td>
+            <td>{u.vote}</td>
           </tr>
         )}
       </tbody>

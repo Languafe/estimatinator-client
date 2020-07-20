@@ -2,25 +2,25 @@ import React from 'react';
 
 import './VotingPanel.css';
 
-const fibonacciNumbers = [
-    0,
-    1,
-    1,
-    2,
-    3,
-    5,
-    8,
-    13,
-    21
+const defaultOptions = [
+  1,
+  2,
+  3,
+  4,
+  6,
+  8,
+  10,
+  12,
+  16
 ];
 
-const VotingPanel = ({ options = fibonacciNumbers, onSubmit }) => {
-    return (
-        <div className="voting-panel">
-            {options.map((value, i) =>
-                <button key={i} onClick={() => onSubmit(options)}>{value}</button>)}
-        </div>
-    );
+const VotingPanel = ({ options = defaultOptions, selected, onSubmit }) => {
+  return (
+    <div className="voting-panel">
+      {options.map((value, i) =>
+        <button key={i} className={selected === value ? 'selected' : ''} onClick={() => onSubmit(value)}>{value}</button>)}
+    </div>
+  );
 };
 
 export default VotingPanel;

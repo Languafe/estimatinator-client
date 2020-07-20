@@ -18,7 +18,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
+  margin-top: 1em;
 }
 
 hr {
@@ -37,9 +38,23 @@ label {
 
 input {
   flex: 1;
-  margin-top: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   font-size: 16px;
   padding: 0.25em 0;
+}
+
+button {
+  background-color: white;
+  outline: none;
+  margin: 0.5em;
+  font-size: 1em;
+  padding: 0.25em 1em;
+}
+
+button.leave {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
 }
